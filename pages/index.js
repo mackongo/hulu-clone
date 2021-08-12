@@ -11,24 +11,15 @@ export default function Home({ results }) {
     <link rel="icon" href="/favicon.ico" />
   </head>
 
-  console.log(results);
-
-
   return (
-
-
     <div className="bg-[#2871B5]">
-
-
       {/* header component */}
       <header className="bg-[#2871B5]">
         <Header />
       </header>
 
       {/* navbar component */}
-
       <Nav />
-
       <Results
         results={results} />
 
@@ -42,7 +33,7 @@ export async function getServerSideProps(context) {
 
   console.log(genre);
 
-  const res = await fetch(`https://api.themoviedb.org/3${requests[genre]?.url || requests.fetchTrending.url}`);
+  const res = await fetch(`https://api.themoviedb.org/3${requests[genre].url || requests.fetchTrending.url}`);
 
   const data = await res.json();
 
