@@ -37,10 +37,10 @@ export default {
   //   title: 'Western',
   //   url: `/movie/western?api_key=${API_KEY}&language=en-US`
   // },
-  fetchLatestTV: {
-    title: 'TV Top Rated',
-    url: `/tv/top_rated?api_key=${API_KEY}&language=en-US`
-  },
+  // fetchLatestTV: {
+  //   title: 'TV Top Rated',
+  //   url: `/tv/top_rated?api_key=${API_KEY}&language=en-US`
+  // },
   fetchTV: {
     title: 'TV Today',
     url: `/tv/popular?api_key=${API_KEY}&language=en-US`
